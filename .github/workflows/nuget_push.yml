@@ -22,7 +22,10 @@ jobs:
           source-url: https://nuget.pkg.github.com/bayronpo/index.json
         env:
             NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}} 
-          
+
+      - name: API Key
+        run: nuget setapikey ${{secrets.GITHUB_TOKEN}}  -Source https://nuget.pkg.github.com/bayronpo/index.json
+        
       - name: Build with dotnet
         run: dotnet build --configuration Release
         
