@@ -12,6 +12,7 @@ jobs:
     runs-on: windows-latest
     permissions:
       packages: write
+      contents: read
     name: Update NuGet package
     steps:
           
