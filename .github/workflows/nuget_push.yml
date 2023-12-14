@@ -24,5 +24,6 @@ jobs:
 
       - name: NuGet push
         run: |
+          nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source https://nuget.pkg.github.com/bayronpo/index.json
           dotnet nuget add source https://nuget.pkg.github.com/bayronpo/index.json --name github --username bayronpo --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
           dotnet nuget push **/*.nupkg --source github
