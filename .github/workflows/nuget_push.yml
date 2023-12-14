@@ -20,7 +20,7 @@ jobs:
         uses: rollycodes/publish-nuget-private@v3.0.1
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: com.myshoppinglist.api
+          PROJECT_FILE_PATH: com.myshoppinglist.api.csproj
           # Configuration to build and package (default is Release)
           # BUILD_CONFIGURATION: # optional, default is Release
           # Platform target to compile (default is empty/AnyCPU)
