@@ -6,5 +6,6 @@
         public int Quantity { get; set; }
         public required string Name { get; set; }
         public required string ShoppingListId { get; set; }
+        public required ShoppingList ShoppingList { get; set; }
     }
 }
