@@ -6,5 +6,6 @@
         public DateTime CreationDate { get; set; }
         public string? Name { get; set; }
         public List<Item>? Items { get; set; }
+        public required string UserId { get; set; }
     }
 }
